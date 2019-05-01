@@ -1,60 +1,25 @@
+<import src="posts-item/posts-item-template.wxml" />
 <view>
-  <swiper indicator-dots="true" autoplay='true' interval="6000"
-  indicator-color="cyan"
-  indicator-active-color='yellow'
-  circular="true"
-  >
-    <swiper-item><image src="/images/1.jpg"></image></swiper-item>
-    <swiper-item><image src="/images/2.jpg"></image></swiper-item>
-    <swiper-item><image src="/images/3.jpg"></image></swiper-item>
-    <swiper-item><image src="/images/4.jpg"></image></swiper-item>
-    <swiper-item><image src="/images/1.jpg"></image></swiper-item>
+  <swiper indicator-dots="true" autoplay='true' interval="6000" indicator-color="cyan" indicator-active-color='yellow' circular="true">
+    <swiper-item>
+      <image src="/images/1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/3.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/4.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/1.jpg"></image>
+    </swiper-item>
   </swiper>
-    <view class="content">
-      <view class="img-time" >
-        <image class="user-img" src="/images/1.jpg"></image>
-        <text class="time-day">2019-04-27</text>
+  <block wx:for="{{postKey}}" wx:for-item="item"   wx:for-index="idx">
+      <view catchtap="onPostTap" data-id="{{idx}}">
+        <template is="postTemp" data="{{...item}}" />
       </view>
-      <text class="text-title">美丽的时光</text>
-      <image class="text-image" src="/images/2.jpg"></image>
-      <text class="text-article">摇啊摇啊摇，摇到外婆桥</text>
-      <view class="text-pz">
-          <image class="text-pl" src="/images/3.jpg"></image>
-          <text class="text-pls">33</text>
-          <image class="text-dz" src="/images/4.jpg"></image>
-          <text class="text-dzs">36</text>
-      </view>
-    </view>
-
-    <view class="content">
-      <view class="img-time" >
-        <image class="user-img" src="/images/1.jpg"></image>
-        <text class="time-day">2019-04-27</text>
-      </view>
-      <text class="text-title">美丽的时光</text>
-      <image class="text-image" src="/images/2.jpg"></image>
-      <text class="text-article">摇啊摇啊摇，摇到外婆桥</text>
-      <view class="text-pz">
-          <image class="text-pl" src="/images/3.jpg"></image>
-          <text class="text-pls">33</text>
-          <image class="text-dz" src="/images/4.jpg"></image>
-          <text class="text-dzs">36</text>
-      </view>
-    </view>
-
-    <view class="content">
-      <view class="img-time" >
-        <image class="user-img" src="/images/1.jpg"></image>
-        <text class="time-day">2019-04-27</text>
-      </view>
-      <text class="text-title">美丽的时光</text>
-      <image class="text-image" src="/images/2.jpg"></image>
-      <text class="text-article">摇啊摇啊摇，摇到外婆桥</text>
-      <view class="text-pz">
-          <image class="text-pl" src="/images/3.jpg"></image>
-          <text class="text-pls">33</text>
-          <image class="text-dz" src="/images/4.jpg"></image>
-          <text class="text-dzs">36</text>
-      </view>
-    </view>
+  </block>
 </view>

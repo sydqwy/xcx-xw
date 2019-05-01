@@ -1,0 +1,17 @@
+<template name="postTemp">
+     <view class="content">
+      <view class="img-time">
+        <image class="user-img" src="{{img}}"></image>
+        <text class="time-day">{{time}}/{{idx}}</text>
+      </view>
+      <text class="text-title">{{title}}</text>
+      <image class="text-image" src="{{bjimg}}"></image>
+      <text class="text-article"></text>
+      <view class="text-pz">
+        <image class="text-pl" src="{{plimg}}"></image>
+        <text class="text-pls">{{pl}}</text>
+        <image class="text-dz" src="{{dzimg}}"></image>
+        <text class="text-dzs">{{dz}}</text>
+      </view>
+    </view>
+</template>

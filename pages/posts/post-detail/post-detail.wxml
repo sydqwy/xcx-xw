@@ -1,0 +1,19 @@
+<view class="content">
+  <image class="bj-img" src="/images/1.jpg"></image>
+  <image src="/images/4.jpg" class="tb"></image>
+  <view class="content-div">
+    <image class="user-img" src="/images/2.jpg"></image>
+    <text>青色的椰汁</text>
+    <text>发表于新浪微博</text>
+    <text>2019-08-11</text>
+  </view>
+  <text class="content-title">世界</text>
+  <view class="tool">
+    <view class="content-img">
+      <image src="/images/1.jpg"></image>
+      <image src="/images/1.jpg"></image>
+    </view>
+    <view class="xian"></view>
+  </view>
+  <text class="text-detail">世界的终结就是这样的恐怖</text>
+</view>
