@@ -4,7 +4,6 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/posts/post-detail/post-detail"
-    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,5 +11,8 @@
     "navigationBarTitleText": "世界的荣光",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ]
 }

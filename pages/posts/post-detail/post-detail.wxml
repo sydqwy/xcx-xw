@@ -1,19 +1,21 @@
 <view class="content">
-  <image class="bj-img" src="/images/1.jpg"></image>
-  <image src="/images/4.jpg" class="tb"></image>
+  <image class="bj-img" src="{{newData.bjimg}}"></image>
+  <image wx:if="{{isPlayMusic}}" catchtap='onMusicTap' src="/images/4.jpg" class="tb"></image>
+  <image wx:else catchtap='onMusicTap' src="/images/3.jpg" class="tb"></image>
   <view class="content-div">
-    <image class="user-img" src="/images/2.jpg"></image>
-    <text>青色的椰汁</text>
-    <text>发表于新浪微博</text>
-    <text>2019-08-11</text>
+    <image class="user-img" src="{{newData.plimg}}"></image>
+    <text>{{newData.user}}</text>
+    <text>{{'来源于'+newData.source}}</text>
+    <text>{{newData.time}}</text>
   </view>
-  <text class="content-title">世界</text>
+  <text class="content-title">{{newData.title}}</text>
   <view class="tool">
     <view class="content-img">
-      <image src="/images/1.jpg"></image>
-      <image src="/images/1.jpg"></image>
+      <image catchtap="changeStatue" wx:if="{{shch}}" src="/images/1.jpg"></image>
+      <image catchtap="changeStatue" wx:else src="/images/2.jpg"></image>
+      <image catchtap="fengxiang" src="/images/2.jpg"></image>
     </view>
     <view class="xian"></view>
   </view>
-  <text class="text-detail">世界的终结就是这样的恐怖</text>
+  <text class="text-detail">{{newData.content}}</text>
 </view>
