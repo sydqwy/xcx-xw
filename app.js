@@ -36,6 +36,7 @@ App({
   globalData: {
     userInfo: null,
     g_isPlayMusic:false,
-    g_currentMusicPid:null
+    g_currentMusicPid:null,
+    doubanBase:'https://douban.uieee.com'
   }
 })

@@ -1,5 +1,4 @@
 var postList = require('../../data/post-data.js')
-
 Page({
 
   /**

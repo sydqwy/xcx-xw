@@ -1,0 +1,23 @@
+.start-container{
+  display:flex;
+  flex-direction: row;
+}
+
+.start{
+  display:flex;
+  flex-direction: row;
+  height:17rpx;
+  margin-right:24rpx;
+  vertical-align: middle;
+}
+
+.start image{
+  padding-left:3rpx;
+  height:17rpx;
+  width:17rpx;
+  padding-top:15rpx;
+}
+
+.start-pf{
+  color:#1f3463;
+}

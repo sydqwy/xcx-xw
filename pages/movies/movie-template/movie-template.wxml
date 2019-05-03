@@ -1,0 +1,8 @@
+<import src="../start-template/start-template" />
+<template name="movie-template">
+    <view class="movie-container">
+        <image class="movie-img" src="{{coverageUrl}}"></image>
+        <text class="movie-title">{{title}}</text>
+        <template is="start" data="{{average:average,stars:stars}}" />
+    </view>
+</template>
