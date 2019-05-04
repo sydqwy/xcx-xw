@@ -9,7 +9,9 @@ Page({
   data: {
     inTheater:{},
     comingSoon:{},
-    top250:{}
+    top250:{},
+    containerShow:true,
+    searchPannelShow:false
   },
 
   /**
@@ -121,5 +123,22 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onMovieTap:function(event){
+    var moveType = event.currentTarget.dataset.movietype;
+      wx.navigateTo({
+        url: './more-movie/more-movie?type='+moveType
+      })
+  },
+  onFocus:function(event){
+    this.setData({ 'containerShow':false,'searchPannelShow':true});
+  },
+
+  onChange:function(event){
+    console.log(9999)
+  },
+  onOutSearch:function(event){
+    console.log(111)
+    this.setData({ 'containerShow':true, 'searchPannelShow':false});
   }
 })
